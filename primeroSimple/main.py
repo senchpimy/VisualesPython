@@ -187,8 +187,6 @@ class RenderWindow(pyglet.window.Window):
         self.prog["object_rotation"].write(object_matrix.tobytes())
 
         self.vao.render(moderngl.TRIANGLE_STRIP)
-        #self.vao.render(moderngl.TRIANGLE_FAN)
-        #self.vao.render(moderngl.TRIANGLES)
 
     def on_close(self):
         print("Cerrando aplicación...")
