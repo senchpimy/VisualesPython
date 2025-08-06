@@ -74,9 +74,9 @@ def get_data(que: Queue):
         if hands:
             hand1 = hands[0]
             lmList1 = hand1["lmList"]
-            bbox1 = hand1["bbox"]
-            center1 = hand1["center"]
-            handType1 = hand1["type"]
+            #bbox1 = hand1["bbox"]
+            #center1 = hand1["center"]
+            #handType1 = hand1["type"]
     
             fingers1 = detector.fingersUp(hand1)
             print(f"H1 = {fingers1.count(1)} %% {fingers1} %%", end=" ")
